@@ -1,11 +1,12 @@
 import DynamicText from "@/landing-page/text/DynamicText";
+import StaticText from "@/landing-page/text/StaticText";
 
 const Text = () => {
     return (
-        <>
-            <h1>Hello</h1>
+        <div>
+            <StaticText />
             <DynamicText />
-        </>
+        </div>
     )
 }
 

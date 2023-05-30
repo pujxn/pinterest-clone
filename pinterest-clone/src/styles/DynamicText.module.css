@@ -1,0 +1,22 @@
+@keyframes textAnimation {
+    from {
+        transform: translateY(2em);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-0.6em);
+        opactiy: 0;
+    }
+}
+
+.dynamicText {
+    animation-name: textAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}

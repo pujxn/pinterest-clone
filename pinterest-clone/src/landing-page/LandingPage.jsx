@@ -2,7 +2,9 @@ import Text from "@/landing-page/text/Text";
 
 const LandingPage = () => {
     return (
-        <Text />
+        <div className="flex justify-center items-center h-full">
+            <Text />
+        </div>
     )
 }
 

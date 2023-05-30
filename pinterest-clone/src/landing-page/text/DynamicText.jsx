@@ -1,6 +1,16 @@
+import styles from "@/styles/DynamicText.module.css"
+import { useState } from "react";
+
 const DynamicText = () => {
+
+    const [visible, setVisible] = useState(true);
+
+    const dynamicVisibilityClass = visible ? "text-green-600" : "hidden";
+
     return (
-        <h2>Pujan</h2>
+        <div className="text-4xl">
+            <p onAnimationEnd={() => setVisible(false)} className={`${styles.dynamicText} ${dynamicVisibilityClass}`}>Pujan</p>
+        </div>
     )
 }
 
